@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6F59FC432CE82120009B555A /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = 6F59FC422CE82120009B555A /* LoremSwiftum */; };
+		6F94BA072CE7E6A900A9B3A2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6F94BA062CE7E6A900A9B3A2 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6F94B9E82CE7E08200A9B3A2 /* dog-ceo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dog-ceo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F59FC432CE82120009B555A /* LoremSwiftum in Frameworks */,
+				6F94BA072CE7E6A900A9B3A2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = "dog-ceo";
 			packageProductDependencies = (
+				6F94BA062CE7E6A900A9B3A2 /* Alamofire */,
+				6F59FC422CE82120009B555A /* LoremSwiftum */,
 			);
 			productName = "dog-ceo";
 			productReference = 6F94B9E82CE7E08200A9B3A2 /* dog-ceo.app */;
@@ -77,6 +86,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
@@ -94,6 +106,10 @@
 			);
 			mainGroup = 6F94B9DF2CE7E08200A9B3A2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6F94BA052CE7E6A900A9B3A2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6F59FC412CE82120009B555A /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6F94B9E92CE7E08200A9B3A2 /* Products */;
 			projectDirPath = "";
@@ -162,7 +178,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -225,7 +241,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -322,6 +338,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F59FC412CE82120009B555A /* XCRemoteSwiftPackageReference "LoremSwiftum" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/LoremSwiftum.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6F94BA052CE7E6A900A9B3A2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F59FC422CE82120009B555A /* LoremSwiftum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F59FC412CE82120009B555A /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
+			productName = LoremSwiftum;
+		};
+		6F94BA062CE7E6A900A9B3A2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F94BA052CE7E6A900A9B3A2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F94B9E02CE7E08200A9B3A2 /* Project object */;
 }

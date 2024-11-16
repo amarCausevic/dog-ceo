@@ -1,0 +1,24 @@
+{
+  "originHash" : "0e9bac6a2b0003f24e20135f28327e004c9ec3c0860b3f9c8c006a5058c7f861",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "e16d3481f5ed35f0472cb93350085853d754913f",
+        "version" : "5.10.1"
+      }
+    },
+    {
+      "identity" : "loremswiftum",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukaskubanek/LoremSwiftum.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4b26c1d946f8fbb76c2a8d4e701ba099cab7b79d"
+      }
+    }
+  ],
+  "version" : 3
+}
